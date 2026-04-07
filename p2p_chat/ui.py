@@ -40,6 +40,12 @@ class ConsoleUI:
         self.username = username
         self.prompt = f"{username}> "
 
+    def set_username(self, username: str) -> None:
+        """Update the local username and prompt."""
+
+        self.username = username
+        self.prompt = f"{username}> "
+
     def render_message(self, sender: str, text: str, timestamp: str) -> str:
         """Render a colored chat message for display."""
 
